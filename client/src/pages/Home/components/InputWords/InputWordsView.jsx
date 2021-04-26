@@ -11,7 +11,6 @@ export function InputWordsView({submitCallback}){
         const name =  target.name;
         const value = target.value;
         setInput({...input,[name]:value})
-        console.log(input)
     }
     function handleSubmit(e){
         e.preventDefault()
@@ -30,7 +29,7 @@ export function InputWordsView({submitCallback}){
     <textarea
         onChange={handleChange}
         name="message" 
-        placeholder="Message" 
+        placeholder="Mensaje" 
         rows="6"
         value={input.message} 
         required></textarea>
@@ -38,6 +37,6 @@ export function InputWordsView({submitCallback}){
         id="send" 
         name="send" 
         type="submit" 
-        className="btn">SEND</button>
+        className="btn">Publicar</button>
     </form>	
 }
