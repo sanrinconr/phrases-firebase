@@ -12,11 +12,9 @@ export function InputWordsContainer(){
             created:Date.now()
         })
         .then((res)=>{
-            console.log(res)
             return true
         })
         .catch(err=>{
-            console.log(err.message)
             return false
         })
     }
