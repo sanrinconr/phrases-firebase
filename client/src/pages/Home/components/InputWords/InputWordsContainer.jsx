@@ -6,16 +6,11 @@ export function InputWordsContainer(){
 
     return <InputWordsView submitCallback={onClickButtonSubmit}/>
 
-    function onClickButtonSubmit(message, contact){
-        return firestore.collection("words").add({
-            name:message,
-            created:Date.now()
+    async function onClickButtonSubmit(message, contact){
+        await firestore.collection("words").add({
+                name:message,
+                created:Date.now()
         })
-        .then((res)=>{
-            return true
-        })
-        .catch(err=>{
-            return false
-        })
+        return true
     }
 }

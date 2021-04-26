@@ -5,18 +5,19 @@ import { useEffect, useState } from "react";
 export function AllWordsContainer(){
     const [words, setWords] = useState()
 
-    const doc = useFirestore().collection("words")
+    const doc = useFirestore().collection("words").orderBy("created","desc")
 
     useEffect(() => { 
         const unsubscribe = doc.onSnapshot(snap => {
-            const data = snap.docs.map(doc=>{
-                return {name:doc.data().name, created:doc.data().created}
-            })
-            setWords(data.sort((a, b) => (a.created < b.created) ? 1 : -1))
+            // const data = snap.docs.map(doc=>{
+            //     return {name:doc.data().name, created:doc.data().created}
+            // })
+            setWords(snap)
         });
+
         //remember to unsubscribe from your realtime listener on unmount or you will create a memory leak
         return () => unsubscribe()
-    }, [doc]);
+    }, []);
 
     // if(words){
     //     return <div>

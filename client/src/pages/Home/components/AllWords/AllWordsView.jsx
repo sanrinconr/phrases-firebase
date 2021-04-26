@@ -6,8 +6,8 @@ export function AllWordsView({words}){
             <span>Que frases se han ingresado? </span>
         </div>
         <ul>
-        {words.map((el,i)=>{
-            return <li key={i}>{el.name}</li>
+        {words.docs.map((el,i)=>{
+            return <li key={i}>{el.data().name}</li>
             })}
         </ul>
     </div>
