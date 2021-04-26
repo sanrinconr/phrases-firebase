@@ -1,5 +1,5 @@
 import { AllWordsView } from "./AllWordsView";
-import {useFirestoreDocData, useFirestore } from 'reactfire';
+import { useFirestore } from 'reactfire';
 import { useEffect, useState } from "react";
 
 export function AllWordsContainer(){
@@ -16,7 +16,7 @@ export function AllWordsContainer(){
         });
         //remember to unsubscribe from your realtime listener on unmount or you will create a memory leak
         return () => unsubscribe()
-    }, []);
+    }, [doc]);
 
     // if(words){
     //     return <div>
@@ -25,7 +25,6 @@ export function AllWordsContainer(){
     // }else{
     //     return "Loading..."
     // }
-    console.log(words)
     return <AllWordsView  words={words}/>
     
     

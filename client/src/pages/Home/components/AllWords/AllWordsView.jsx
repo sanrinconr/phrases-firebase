@@ -1,7 +1,5 @@
-import { useEffect } from "react"
 import styles from "./AllWordsView.module.scss"
 export function AllWordsView({words}){
-    console.log("render view!")
     if(words){
         return <div className={styles.container}>
         <div className={styles.title}>
