@@ -15,6 +15,7 @@
     }
   },
   "hosting": {
+    "site": "frases-sanrinconr",
     "public": "client/build",
     "ignore": [
       "firebase.json",
