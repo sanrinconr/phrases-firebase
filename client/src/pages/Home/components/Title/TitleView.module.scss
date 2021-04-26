@@ -1,0 +1,19 @@
+.title{
+    font-size: 1.5em;
+    display: flex;
+    flex-flow: column wrap;
+    span{
+        text-align: center;
+    }
+    margin-top: 0.8em;
+    @media (max-width: 375px) {
+        font-size: 1.2em; 
+    }
+    
+}
+.description{
+    font-size: 0.5em;
+    font-style: italic;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}

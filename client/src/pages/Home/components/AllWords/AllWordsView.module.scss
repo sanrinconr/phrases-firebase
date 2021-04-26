@@ -1,0 +1,13 @@
+.container{
+    margin-top: 2em;
+    @media (max-width: 375px) {
+        
+    }
+    @media (max-width: 320px) {
+        font-size: 0.8em;
+    }
+}
+.title{
+    text-align: center;
+    font-size: 1em;
+}
