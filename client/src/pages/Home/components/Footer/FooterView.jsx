@@ -9,7 +9,7 @@ export function FooterView(){
             Aprendiendo firebase, sanrinconr 🙆‍♂️
         </div>
         <div className={styles.social}>
-            <a href="https://github.com/sanrinconr" target="_blank" rel="noopener noreferrer" >
+            <a href="https://github.com/sanrinconr/phrases-firebase" target="_blank" rel="noopener noreferrer" >
                 <img src={github} alt=""/>
             </a>
             <a href="https://www.linkedin.com/in/sanrinconr/" target="_blank" rel="noopener noreferrer" >
