@@ -18,4 +18,4 @@ Aprender y divertirse!, agregar una frase no tiene ninguna utilidad pero si vari
 ## ¿Cómo puedo aportar?
  
 Agregando una frase al proyecto!.
-Puedes ingresar a la aplicacion con este enlace: [frases-sanrinconr.firebaseapp.com](https://frases-sanrinconr.firebaseapp.com/)
+Puedes ingresar a la aplicacion con este enlace: [frases.santiagorincon.site](https://frases.santiagorincon.site/)
